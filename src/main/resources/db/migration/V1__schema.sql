@@ -81,7 +81,6 @@ CREATE TABLE reservation_status_history (
                                             changed_at     TIMESTAMP   NOT NULL
 );
 
--- Indeksy na kluczach obcych (PostgreSQL nie tworzy ich automatycznie)
 CREATE INDEX idx_events_category       ON events(category_id);
 CREATE INDEX idx_events_organizer      ON events(organizer_id);
 CREATE INDEX idx_events_location       ON events(location_id);
