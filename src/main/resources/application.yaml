@@ -1,3 +1,7 @@
 spring:
   application:
     name: eventplatform
+  datasource:
+    url: jdbc:postgresql://localhost:5432/events
+    username: ${DB_USER:events}
+    password: ${DB_PASSWORD:events}
